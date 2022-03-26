@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+      <bean id="stu" class="集合.Stu">
+          <property name="coures">
+              <array>
+                  <value>数据结构</value>
+                  <value>Java</value>
+              </array>
+          </property>
+          <property name="list">
+              <list>
+                  <value>占山</value>
+                  <value>小三</value>
+              </list>
+          </property>
+          <property name="map">
+              <map>
+                 <entry key="Java" value="java"></entry>
+                  <entry key="PHP" value="php"></entry>
+              </map>
+          </property>
+          <property name="sets">
+              <set>
+                  <value>Mysql</value>
+                  <value>Redis</value>
+              </set>
+          </property>
+      </bean>
+
+    <bean id="myBean" class="集合.MyBean"></bean>
+</beans>

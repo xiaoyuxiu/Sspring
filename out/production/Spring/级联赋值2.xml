@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+      <bean id="emp" class="One.Emp">
+          <property name="ename" value="lily"></property>
+          <property name="gender" value="女"></property>
+          <property name="department" ref="department"></property>
+          <property name="department.dname"  value="销售"></property>
+    </bean>
+      <bean id="department" class="One.Department">
+
+       </bean>
+</beans>
