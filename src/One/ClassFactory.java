@@ -6,6 +6,7 @@ import org.springframework.core.io.ClassPathResource;
 
 public class ClassFactory {
    // public  Dao dao;
+    //IOC底层
     public static Dao getDao()  {
         //找到配置文件
         ClassPathResource name=new ClassPathResource("TextOne.xml");

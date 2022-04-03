@@ -3,9 +3,9 @@
        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
        xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
 
-    <!-- 配置相关对象创建-->
+    <!-- 配置TextDemo相关对象创建-->
     <bean id="eee" class="One.TextDemo1"></bean>
-
+    <!--有参构造方法属性注入-->
     <bean id="cloth" class="One.Cloth">
         <constructor-arg name="size" value="12"></constructor-arg>
         <constructor-arg name="color" value="红"></constructor-arg>

@@ -2,7 +2,7 @@ package 集合;
 
 import org.springframework.beans.factory.FactoryBean;
 
-public class MyBean implements FactoryBean {
+public class MyBean implements FactoryBean<Course> {
     @Override
     public Course getObject() throws Exception {
         Course course=new Course();

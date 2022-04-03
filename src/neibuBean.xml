@@ -6,7 +6,6 @@
        <bean id="emp" class="One.Emp">
            <property name="ename" value="luvy"></property>
            <property name="gender" value="nv"></property>
-
            <property name="department" ref="de"></property>
         </bean>
         <bean id="de" class="One.Department">

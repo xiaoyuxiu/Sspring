@@ -4,6 +4,9 @@ public class Emp {
     String ename;
     String gender;
     public Department department;
+    public Department getDepartment(){
+        return department;
+    }
     public void setEname(String ename) {
         this.ename = ename;
     }

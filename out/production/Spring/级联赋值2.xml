@@ -10,6 +10,6 @@
           <property name="department.dname"  value="销售"></property>
     </bean>
       <bean id="department" class="One.Department">
-
+          <property name="dname" value="财务部"></property>
        </bean>
 </beans>

@@ -4,6 +4,11 @@
        xmlns:p="http://www.springframework.org/schema/p"
        xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
 
+    <!--p名称空间注入-->
+    <!--属性值包含特殊符号
+ 1 把<>进行转义 &lt; &gt;
+ 2 把带特殊符号内容写到 CDATA
+-->
     <bean id="book" class="One.Book" p:author="九阳" >
         <property name="name">
             <value> <![CDATA[<<南京>]]> </value>

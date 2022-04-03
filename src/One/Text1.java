@@ -71,21 +71,6 @@ public class Text1 {
         department.toString();
     }
 
-    @Test
-    public void text7(){
-        ApplicationContext context=new ClassPathXmlApplicationContext("集合属性.xml");
-        Stu department=context.getBean("stu", Stu.class);
-        System.out.println(department);
-        department.toString();
-    }
-
-    @Test
-//    public void text8(){
-//        ApplicationContext context=new ClassPathXmlApplicationContext("集合属性.xml");
-//        Course department=context.getBean("myBean", MyBean.class);
-//        System.out.println(department);
-//        department.toString();
-//    }
     public static void main(String[] args) {
         Dao dao=ClassFactory.getDao();
         dao.out();

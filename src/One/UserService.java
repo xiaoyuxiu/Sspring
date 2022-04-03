@@ -1,7 +1,7 @@
 package One;
 
 public class UserService {
-    UserDao u=new UserDao();
+    UserDao u;
     public UserService(UserDao u){
         this.u=u;
     }
